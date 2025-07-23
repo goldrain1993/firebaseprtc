@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Firebase 로그인</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>Firebase 로그인 예제</h1>
+  <div class="form">
+    <input type="email" id="email" placeholder="이메일"><br><br>
+    <input type="password" id="password" placeholder="비밀번호"><br><br>
+    <button onclick="signUp()">회원가입</button>
+    <button onclick="signIn()">로그인</button>
+    <button onclick="signOut()">로그아웃</button>
+    <a href="signup.html"><button type="button">회원가입 페이지로</button></a>
+  </div>
+  <p id="user-status"></p>
+</body>
+</html>

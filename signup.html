@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>회원가입 - Firebase 예제</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <h1>회원가입 페이지</h1>
+  <div class="form">
+    <input type="email" id="signup-email" placeholder="이메일"><br><br>
+    <input type="password" id="signup-password" placeholder="비밀번호"><br><br>
+    <button onclick="signUpPage()">회원가입</button>
+    <a href="index.html"><button type="button">로그인 페이지로</button></a>
+  </div>
+  <p id="signup-status"></p>
+</body>
+</html>
